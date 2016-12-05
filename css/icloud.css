@@ -1,0 +1,1463 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  overflow: hidden;
+}
+
+.box .icloud_left {
+  width: 25%;
+  height: 100%;
+  background: #383836;
+  float: left;
+}
+
+.box .icloud_left .icL_head {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.box .icloud_left .icL_head .icL_headL {
+  width: 179px;
+  height: 100%;
+  font-size: 21px;
+  position: absolute;
+  left: 13px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box .icloud_left .icL_head .icL_headL .h_log {
+  width: 56px;
+  height: 16px;
+  background-image: url("../img/packed-5.png");
+  background-position: 0px -588px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box .icloud_left .icL_head .icL_headL .h_text {
+  line-height: 44px;
+  color: #90908F;
+  position: absolute;
+  left: 63px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box .icloud_left .icL_head .icL_headL .h_xiala {
+  width: 11px;
+  height: 7px;
+  background-image: url("../img/packed-5.png");
+  background-position: -155px -647px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 14px;
+  top: -3px;
+  bottom: 0;
+  margin: auto;
+}
+
+.box .icloud_left .icL_head .icL_headR {
+  height: 23px;
+  width: 23px;
+  font-size: 21px;
+  background-image: url("../img/packed-5.png");
+  background-position: -69px -526px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.box .icloud_left .icL_head .icL_headR:hover {
+  background-image: url("../img/packed-5.png");
+  background-position: -92px -526px;
+  background-repeat: no-repeat;
+}
+
+.box .icloud_left .icL_jihua {
+  width: 100%;
+  height: auto;
+}
+
+.box .icloud_left .icL_jihua .icL_yijihua {
+  width: 100%;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.box .icloud_left .icL_jihua .icL_yijihua .naozhong {
+  height: 42px;
+  width: 42px;
+  background-image: url("../img/packed-5.png");
+  background-position: 0px -359px;
+  background-repeat: no-repeat;
+}
+
+.box .icloud_left .icL_jihua .icL_yijihua .y_zi {
+  position: absolute;
+  height: 24px;
+  line-height: 24px;
+  top: 11px;
+  left: 42px;
+  right: 42px;
+  overflow: hidden;
+  font-size: 17px;
+  color: #fff;
+}
+
+.box .icloud_left .icL_jihua .icL_yijihua .yijuhua_bottom {
+  position: absolute;
+  left: 0;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-image: url("../img/packed-1.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.box .icloud_left .icL_jihua .yijihua_active {
+  background: #2d2d2b;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav {
+  min-height: 308px;
+  cursor: auto;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao {
+  height: 45px;
+  border: solid 0 transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao .liebiao1 {
+  height: 45px;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao .liebiao1 .lie_dian {
+  background-image: url("../img/packed-5.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  height: 17px;
+  width: 17px;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao .liebiao1 .title {
+  position: absolute;
+  height: 24px;
+  line-height: 24px;
+  top: 10px;
+  left: 39px;
+  right: 42px;
+  overflow: hidden;
+  font-size: 17px;
+  color: #fff;
+  background: #383836;
+  border: 0;
+  outline: none;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao .liebiao1 .title_active {
+  background: #2d2d2b;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao .liebiao1 .wifi {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  width: 23px;
+  height: 23px;
+  margin: 0px;
+  cursor: pointer;
+  background-image: url("../img/packed-5.png");
+  background-position: -119px -497px;
+  background-repeat: no-repeat;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao .liebiao1_top {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0px;
+  top: -2px;
+  height: 2px;
+  background-image: url("../img/packed-2.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao .liebiao1_bottom {
+  position: absolute;
+  left: 44px;
+  right: 0px;
+  bottom: 0px;
+  height: 2px;
+  background-image: url("../img/packed-1.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.box .icloud_left .icL_jihua .jcL_nav .liebiao_active {
+  background: #2d2d2b;
+}
+
+.box .icloud_right {
+  width: 75%;
+  height: 100%;
+  background: url(../img/packed-4.png);
+  float: left;
+}
+
+.box .icloud_right .icR_head {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+  height: 45px;
+  width: 100%;
+}
+
+.box .icloud_right .icR_head .icR_headL {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.box .icloud_right .icR_head .icR_headL .icR_headL_L {
+  overflow: hidden;
+  position: absolute;
+  left: 3px;
+  width: 42px;
+  top: 2px;
+  height: 42px;
+}
+
+.box .icloud_right .icR_head .icR_headL .icR_headL_L .icR_sousuo {
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/packed-5.png");
+  background-position: -138px -359px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.box .icloud_right .icR_head .icR_headL .icR_headL_R {
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  bottom: 0px;
+  right: 3px;
+}
+
+.box .icloud_right .icR_head .icR_headL .icR_headL_R .icR_headL_R_input {
+  top: 11px;
+  position: absolute;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.box .icloud_right .icR_head .icR_headL .icR_headL_R #input {
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  display: block;
+  background: transparent;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  font-size: 19px;
+  color: #333;
+}
+
+.box .icloud_right .icR_head .icR_headR {
+  width: 136px;
+  height: 100%;
+  float: right;
+}
+
+.box .icloud_right .icR_head .icR_headR .icR_headR_L {
+  left: 0px;
+  right: 55px;
+  top: 0px;
+  bottom: 0px;
+  color: #333;
+  height: 45px;
+  width: 92px;
+  cursor: pointer;
+  font-size: 21px;
+  overflow: hidden;
+  line-height: 45px;
+}
+
+.box .icloud_right .icR_head .icR_headR .icR_headR_L .icR_headR_L_L {
+  line-height: 45px;
+  text-align: right;
+  padding-right: 18px;
+}
+
+.box .icloud_right .icR_head .icR_headR .icR_headR_L .icR_headR_L_R {
+  background-image: url("../img/packed-5.png");
+  background-position: -62px -391px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 11px;
+  height: 7px;
+  top: 50%;
+  margin-top: -3px;
+  right: 4px;
+}
+
+.box .icloud_right .icR_head .icR_headR .icR_headR_gang {
+  margin-top: -11px;
+  overflow: hidden;
+  position: absolute;
+  right: 44px;
+  width: 1px;
+  top: 50%;
+  height: 22px;
+  background-color: #e5e5e5;
+}
+
+.box .icloud_right .icR_head .icR_headR .icR_headR_R {
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  width: 44px;
+  top: 0px;
+  bottom: 0px;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_head .icR_headR .icR_headR_R .icR_headR_R_help {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-top: -11px;
+  margin-left: -11px;
+  background-image: url("../img/packed-5.png");
+  background-position: -137px -526px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_xia {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 69px;
+  bottom: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_head {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 62px;
+  left: 28px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_head .icR_xia_head_L {
+  position: absolute;
+  font-size: 40px;
+  line-height: 1.2;
+  cursor: default;
+  left: 0px;
+  right: 200px;
+  top: 0px;
+  bottom: 10px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_head .icR_xia_head_R {
+  overflow: hidden;
+  position: absolute;
+  font-size: 15px;
+  cursor: pointer;
+  right: 80px;
+  width: 39px;
+  top: 17px;
+  height: 27px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_head .icR_xia_head_R .icR_xia_head_R_xuze {
+  line-height: 29px;
+  font-size: 19px;
+  top: 0;
+  text-align: center;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 56px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_xian {
+  position: absolute;
+  left: 30px;
+  right: 0px;
+  height: 2px;
+  background-image: url("../img/packed-3.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  top: 0px;
+  z-index: 5;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng {
+  overflow: hidden;
+  height: 52px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .wancheng_L {
+  position: absolute;
+  top: 16px;
+  left: 51px;
+  margin: 0px;
+  overflow: hidden;
+  color: #999;
+  font-size: 19px;
+  cursor: default;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .wancheng_R {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 45px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .wancheng_R .wancheng_R_Limg {
+  position: absolute;
+  cursor: pointer;
+  left: 11px;
+  top: 16px;
+  margin: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/packed-5.png");
+  background-position: -23px -526px;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  transition: all .3s linear;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .wancheng_R .wancheng_R_Limg_active {
+  transform: rotate(0deg);
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .wancheng_R_R_zi {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  width: 141px;
+  top: 52px;
+  bottom: 0px;
+  margin: auto;
+  height: 50px;
+  line-height: 50px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .wancheng_R_R_zi_active {
+  display: block;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .icR_xia_bottom_xian1 {
+  display: none;
+  position: absolute;
+  left: 30px;
+  right: 0px;
+  height: 2px;
+  background-image: url("../img/packed-3.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  bottom: -52px;
+  z-index: 5;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_wancheng .icR_xia_bottom_xian1_active {
+  display: block;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 {
+  overflow: hidden;
+  height: 0;
+  cursor: auto;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .shijian {
+  height: 42px;
+  line-height: 42px;
+  font-size: 19px;
+  padding-left: 30px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 {
+  overflow: hidden;
+  height: 52px;
+  z-index: 2;
+  background: transparent;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_back {
+  opacity: 0.1;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_top {
+  position: absolute;
+  left: 30px;
+  right: 0px;
+  height: 2px;
+  background-image: url("../img/packed-3.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  top: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_bottom {
+  overflow: visible;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 1px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_nei {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_nei .nei_Ldian {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  background-image: url("../img/packed-5.png");
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_nei .no_finish {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 81px;
+  background: transparent;
+  margin: auto;
+  height: auto;
+  width: auto;
+  color: #333;
+  display: inline;
+  font-size: 19px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_nei .nei_Rxianqing {
+  display: none;
+  width: auto;
+  position: absolute;
+  right: 70px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_bottom_neirong_ywc2 .icR_xia_b_nr_ywc_nei .nei_Rxianqing span {
+  display: block;
+  font-size: 19px;
+  height: 21px;
+  text-align: right;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  line-height: 18px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .ywc_active {
+  top: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_b_nr_ywc_tb_active.blue2 {
+  background: #40ACF9;
+  color: #40ACF9;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_b_nr_ywc_tb_active.brown2 {
+  background: #9F845D;
+  color: #9F845D;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_b_nr_ywc_tb_active.orange2 {
+  background: #F89500;
+  color: #F89500;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_b_nr_ywc_tb_active.pink2 {
+  background: #F72469;
+  color: #F72469;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_b_nr_ywc_tb_active.yellow2 {
+  background: #F2CB00;
+  color: #F2CB00;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_b_nr_ywc_tb_active.purple2 {
+  background: #C970E2;
+  color: #C970E2;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2 .icR_xia_b_nr_ywc_tb_active.green2 {
+  background: #6DDC31;
+  color: #6DDC31;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body2_active {
+  height: auto;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body {
+  overflow: hidden;
+  height: auto;
+  cursor: auto;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .kong {
+  height: 25px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc {
+  overflow: hidden;
+  height: 52px;
+  z-index: 2;
+  background: transparent;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_back {
+  opacity: 0.1;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_top {
+  position: absolute;
+  left: 30px;
+  right: 0px;
+  height: 2px;
+  background-image: url("../img/packed-3.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  top: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_bottom {
+  overflow: visible;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 1px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_nei {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_nei .nei_Ldian {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  background-image: url("../img/packed-5.png");
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_nei .no_finish {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 81px;
+  background: transparent;
+  margin: auto;
+  height: auto;
+  width: auto;
+  color: #333;
+  display: inline;
+  font-size: 19px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_nei .nei_Rxianqing {
+  display: none;
+  width: auto;
+  position: absolute;
+  right: 70px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_bottom_neirong_ywc .icR_xia_b_nr_ywc_nei .nei_Rxianqing span {
+  display: block;
+  font-size: 19px;
+  height: 21px;
+  text-align: right;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  line-height: 18px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .ywc_active {
+  top: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_b_nr_ywc_tb_active.blue2 {
+  background: #40ACF9;
+  color: #40ACF9;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_b_nr_ywc_tb_active.brown2 {
+  background: #9F845D;
+  color: #9F845D;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_b_nr_ywc_tb_active.orange2 {
+  background: #F89500;
+  color: #F89500;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_b_nr_ywc_tb_active.pink2 {
+  background: #F72469;
+  color: #F72469;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_b_nr_ywc_tb_active.yellow2 {
+  background: #F2CB00;
+  color: #F2CB00;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_b_nr_ywc_tb_active.purple2 {
+  background: #C970E2;
+  color: #C970E2;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR_xia_bottom_neirong_body .icR_xia_b_nr_ywc_tb_active.green2 {
+  background: #6DDC31;
+  color: #6DDC31;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng {
+  min-height: 52px;
+  height: auto;
+  cursor: auto;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  cursor: auto;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: -10000px;
+  height: 52px;
+  z-index: 2;
+  background: transparent;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_back {
+  opacity: 0.1;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_top {
+  position: absolute;
+  left: 30px;
+  right: 0px;
+  height: 2px;
+  background-image: url("../img/packed-3.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  top: 0px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_bottom {
+  overflow: visible;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 1px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_nei {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_nei .nei_Ldian {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  background-image: url("../img/packed-5.png");
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_nei .no_finish {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 81px;
+  background: transparent;
+  margin: auto;
+  height: auto;
+  width: auto;
+  color: #333;
+  display: inline;
+  font-size: 19px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_nei .nei_Rxianqing {
+  width: auto;
+  position: absolute;
+  right: 70px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_bottom_neirong_ywc1 .icR_xia_b_nr_ywc_nei .nei_Rxianqing span {
+  display: block;
+  font-size: 19px;
+  height: 21px;
+  text-align: right;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  line-height: 18px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .ywc_active {
+  top: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_b_nr_ywc_tb_active.blue2 {
+  background: #40ACF9;
+  color: #40ACF9;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_b_nr_ywc_tb_active.brown2 {
+  background: #9F845D;
+  color: #9F845D;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_b_nr_ywc_tb_active.orange2 {
+  background: #F89500;
+  color: #F89500;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_b_nr_ywc_tb_active.pink2 {
+  background: #F72469;
+  color: #F72469;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_b_nr_ywc_tb_active.yellow2 {
+  background: #F2CB00;
+  color: #F2CB00;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_b_nr_ywc_tb_active.purple2 {
+  background: #C970E2;
+  color: #C970E2;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_body1 .icR_xia_b_nr_ywc_tb_active.green2 {
+  background: #6DDC31;
+  color: #6DDC31;
+  left: 0;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_xin {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 52px;
+  left: 30px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_xin .icR_xia_bottom_xian_top {
+  position: absolute;
+  right: 0px;
+  height: 2px;
+  background-image: url("../img/packed-3.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  top: 0px;
+  left: 30px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_xin .wancheng_L {
+  position: absolute;
+  top: 16px;
+  left: 51px;
+  margin: 0px;
+  overflow: hidden;
+  color: #999;
+  font-size: 19px;
+  cursor: default;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_xin .wancheng_R {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 45px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_xin .wancheng_R .wancheng_R_Limg {
+  position: absolute;
+  cursor: pointer;
+  left: 11px;
+  top: 16px;
+  margin: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/packed-5.png");
+  background-position: -23px -526px;
+  background-repeat: no-repeat;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_xin .wancheng_R_R_zi {
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  width: 141px;
+  top: 16px;
+  bottom: 10px;
+}
+
+.box .icloud_right .icR_xia .icR_xia_bottom .icR_xia_bottom_neirong .icR_xia_bottom_neirong1 .icR-xinzeng .icR_xia_bottom_neirong_xin .icR_xia_bottom_xian1 {
+  position: absolute;
+  left: 30px;
+  right: 0px;
+  height: 2px;
+  background-image: url("../img/packed-3.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  bottom: 0px;
+  z-index: 5;
+}
+
+.box .icloud_right .selectorShow {
+  display: none;
+  position: absolute;
+  right: 125px;
+  top: 15px;
+  width: 355px;
+  height: 226px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.box .icloud_right .selectorShow strong {
+  background-image: url("../img/packed-5.png");
+  background-position: -80px -604px;
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 15px;
+  position: absolute;
+  top: 80px;
+  right: -24px;
+  transform: rotate(-90deg);
+}
+
+.box .icloud_right .selectorShow .selectorText {
+  font-family: 微软雅黑;
+  display: block;
+  width: 314px;
+  height: 42px;
+  font-size: 25px;
+  line-height: 42px;
+  padding-left: 10px;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.0980392);
+  border-image: initial;
+  margin: 20px auto 0px;
+  outline: none;
+}
+
+.box .icloud_right .selectorShow .span_color {
+  display: block;
+  width: 314px;
+  margin: 0 auto;
+  height: 22px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #1a1a1a;
+  opacity: 0.7;
+  margin-top: 21px;
+}
+
+.box .icloud_right .selectorShow ul {
+  width: 314px;
+  margin: 0 auto;
+  height: 33px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.box .icloud_right .selectorShow ul li {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  padding: 4px;
+  margin-left: 9px;
+}
+
+.box .icloud_right .selectorShow ul li em {
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.box .icloud_right .selectorShow ul li #pink {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -356px;
+}
+
+.box .icloud_right .selectorShow ul li #orange {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -381px;
+}
+
+.box .icloud_right .selectorShow ul li #purple {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -231px;
+}
+
+.box .icloud_right .selectorShow ul li #yellow {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -306px;
+}
+
+.box .icloud_right .selectorShow ul li #brown {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -331px;
+}
+
+.box .icloud_right .selectorShow ul li #green {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -256px;
+}
+
+.box .icloud_right .selectorShow ul li #blue {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -281px;
+}
+
+.box .icloud_right .selectorShow ul li:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.box .icloud_right .selectorShow ul .pink1 {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -165px;
+}
+
+.box .icloud_right .selectorShow ul .orange1 {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -198px;
+}
+
+.box .icloud_right .selectorShow ul .purple1 {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.box .icloud_right .selectorShow ul .yellow1 {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -99px;
+}
+
+.box .icloud_right .selectorShow ul .brown1 {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -132px;
+}
+
+.box .icloud_right .selectorShow ul .green1 {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -33px;
+}
+
+.box .icloud_right .selectorShow ul .blue1 {
+  background: url(../img/stylesheet-1.png);
+  background-repeat: no-repeat;
+  background-position: 0px -66px;
+}
+
+.box .icloud_right .selectorShow .button {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 60px;
+  position: relative;
+}
+
+.box .icloud_right .selectorShow .button #del {
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  font-size: 18px;
+  color: #ff3b30;
+  margin-left: 20px;
+}
+
+.box .icloud_right .selectorShow .button #back {
+  display: inline-block;
+  width: auto;
+  font-size: 18px;
+  color: #007aff;
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.box .icloud_right .selectorShow .button #over {
+  display: inline-block;
+  width: auto;
+  font-size: 18px;
+  color: #007aff;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.box .icloud_right .selectorShow_active {
+  display: block;
+}
+
+.box .tan {
+  width: 450px;
+  height: 180px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3), 0px 0px 1px 1000px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 25px;
+  transform: scale(0);
+  z-index: 20;
+  transition: all 0.3s ease-out;
+}
+
+.box .tan .jingao {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/packed-5.png");
+  background-position: -68px -167px;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.box .tan .tan-text {
+  width: 306px;
+  height: 77px;
+  float: left;
+  margin-left: 15px;
+  font-family: "微软雅黑";
+}
+
+.box .tan .tan-text p {
+  margin-top: 10px;
+  color: #666666;
+}
+
+.box .tan span {
+  font-family: "微软雅黑";
+  position: absolute;
+  color: #167EFB;
+  right: 200px;
+  bottom: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.box .tan strong {
+  font-family: "微软雅黑";
+  position: absolute;
+  color: #167EFB;
+  right: 25px;
+  bottom: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.box .tan_active {
+  transform: scale(1);
+}
+
+.box .blue {
+  background-position: -51px -571px;
+  color: #40ACF9;
+}
+
+.box .brown {
+  background-position: -133px -549px;
+  color: #9F845D;
+}
+
+.box .orange {
+  background-position: -102px -571px;
+  color: #F89500;
+}
+
+.box .pink {
+  background-position: -68px -571px;
+  color: #F72469;
+}
+
+.box .yellow {
+  background-position: -85px -571px;
+  color: #F2CB00;
+}
+
+.box .purple {
+  background-position: -34px -571px;
+  color: #C970E2;
+}
+
+.box .green {
+  background-position: 0px -571px;
+  color: #6DDC31;
+}
+
+.box .blue2 {
+  background-position: 0px -433px;
+  color: #40ACF9;
+}
+
+.box .brown2 {
+  background-position: -32px -433px;
+  color: #9F845D;
+}
+
+.box .orange2 {
+  background-position: -136px -235px;
+  color: #F89500;
+}
+
+.box .pink2 {
+  background-position: -96px -433px;
+  color: #F72469;
+}
+
+.box .yellow2 {
+  background-position: -32px -465px;
+  color: #F2CB00;
+}
+
+.box .purple2 {
+  background-position: -64px -401px;
+  color: #C970E2;
+}
+
+.box .green2 {
+  background-position: -74px -359px;
+  color: #6DDC31;
+}
+
+.box .blue3 {
+  background-position: -106px -359px;
+  color: #40ACF9;
+}
+
+.box .brown3 {
+  background-position: -136px -167px;
+  color: #9F845D;
+}
+
+.box .orange3 {
+  background-position: 0px -401px;
+  color: #F89500;
+}
+
+.box .pink3 {
+  background-position: -64px -433px;
+  color: #F72469;
+}
+
+.box .yellow3 {
+  background-position: -128px -433px;
+  color: #F2CB00;
+}
+
+.box .purple3 {
+  background-position: -128px -401px;
+  color: #C970E2;
+}
+
+.box .green3 {
+  background-position: -136px -199px;
+  color: #6DDC31;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="icloud">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/icloud.css" />
+		<script src="//cdn.bootcss.com/angular.js/1.5.8/angular.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/icloud.js"></script>
+	</head>
+	<body ng-controller="icloudCtrl" >
+	    <div class="box">
+	        <div class="icloud_left">
+	            <div class="icL_head">
+	                <div class="icL_headL">
+	                    <div class="h_log"></div>
+	                    <div class="h_text">提醒事项</div>
+	                    <div class="h_xiala"></div>
+	                </div>
+	                <div class="icL_headR" ng-click="addList();save2local()"></div>
+	            </div>
+	            <div class="icL_jihua">
+	                <div class="icL_yijihua">
+	                    <div class="naozhong"></div>
+	                    <div class="y_zi">已计划</div>
+	                    <div class="yijuhua_bottom"></div>
+	                </div>
+	                <div my-ul>
+	                    <div class="liebiao" ng-repeat="v in lists track by $index">
+	                        <div class="liebiao1">
+	                            <div class="lie_dian {{v.theme}}"></div>
+	                            <input type="text" class="title" ng-model="v.name" ng-keyup="save2local()"/>
+	                            <!--<div class="title">{{v.name}}</div>-->
+	                            <div class="wifi"></div>
+	                        </div>
+	                        <div class="liebiao1_top"></div>
+	                        <div class="liebiao1_bottom"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="icloud_right">
+	            <div class="icR_head">
+	                <div class="icR_headL">
+	                    <div class="icR_headL_L">
+	                        <div class="icR_sousuo"></div>
+	                    </div>
+	                    <div class="icR_headL_R">
+	                        <!--<div class="icR_headL_R_input"></div>-->
+	                        <input type="text" placeholder="搜索所有提醒" id="input"/>
+	                    </div>
+	                </div>
+	                <div class="icR_headR">
+	                    <div class="icR_headR_L">
+	                        <div class="icR_headR_L_L">
+	                            焦国焘
+	                        </div>
+	                        <div class="icR_headR_L_R"></div>
+	                    </div>
+	                    <div class="icR_headR_gang"></div>
+	                    <div class="icR_headR_R">
+	                        <div class="icR_headR_R_help"></div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="icR_xia">
+	                <div class="icR_xia_head ">
+	                    <div class="icR_xia_head_L {{lists[cu].theme}}">
+	                        <!--新列表-->{{lists[cu].name}}
+	                    </div>
+	                    <div class="icR_xia_head_R " my_show>
+	                        <div class="icR_xia_head_R_xuze ">选项</div>
+	                    </div>
+	                </div>
+	                <div class="icR_xia_bottom">
+	                    <div class="icR_xia_bottom_xian"></div>
+	                    <!--已完成-->
+	                    <div class="icR_xia_bottom_neirong">
+	                        <div class="icR_xia_bottom_neirong1">
+	                            <div class="icR_xia_bottom_neirong_wancheng" dianji-wancheng>
+	                                <div class="wancheng_L">
+	                                    以完成：{{count()}} 项
+	                                </div>
+	                                <div class="wancheng_R" ng-hide="count()===0">
+	                                    <div class="wancheng_R_Limg"></div>
+	                                </div>
+	                                <div class="wancheng_R_R_zi {{color3[cu]}}" ng-click="tan()">
+                                               清除已完成事件
+                                    </div>
+                                    <div class="icR_xia_bottom_xian1"></div>
+	                            </div>
+	                            <!--已完成-->
+	                            <div class="icR_xia_bottom_neirong_body2" ng-wancheng>
+	                                <div class="shijian"> 年 月 日 星期</div>
+                                    <div class="icR_xia_bottom_neirong_ywc2" ng-if="v.state==1" ng-repeat="v in lists[cu].todos track by $index" >
+                                        <div class="icR_xia_b_nr_ywc_back {{color2[cu]}}"></div>
+                                        <div class="icR_xia_b_nr_ywc_top {{color2[cu]}}"></div>
+                                        <div class="icR_xia_b_nr_ywc_bottom {{color2[cu]}}"></div>
+                                        <div class="icR_xia_b_nr_ywc_nei">
+                                            <span class="nei_Ldian {{color3[cu]}}" ng-click="v.state=0"></span>
+                                            <input type="text" class="no_finish" no-model="v.name" value="{{v.name}}"/>
+                                            <div class="nei_Rxianqing">
+                                                <span>详细信息</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+	                            <!--未完成-->
+	                            <div class="icR_xia_bottom_neirong_body" ng-weiwancheng>
+                                    <div class="icR_xia_bottom_neirong_ywc" ng-if="v.state==0" ng-repeat="v in lists[cu].todos track by $index" >
+                                        <div class="icR_xia_b_nr_ywc_back {{color2[cu]}}"></div>
+                                        <div class="icR_xia_b_nr_ywc_top {{color2[cu]}}"></div>
+                                        <div class="icR_xia_b_nr_ywc_bottom {{color2[cu]}}"></div>
+                                        <div class="icR_xia_b_nr_ywc_nei">
+                                            <span class="nei_Ldian {{color2[cu]}}" ng-click="v.state=1"></span>
+                                            <input type="text" class="no_finish" no-model="v.name" value="{{v.name}}"/>
+                                            <div class="nei_Rxianqing">
+                                                <span>详细信息</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icR-xinzeng" >
+                                    <div class="icR_xia_bottom_neirong_body1">
+                                        <div class="icR_xia_bottom_neirong_ywc1" >
+                                            <div class="icR_xia_b_nr_ywc_back {{color2[cu]}}"></div>
+                                            <div class="icR_xia_b_nr_ywc_top {{color2[cu]}}"></div>
+                                            <div class="icR_xia_b_nr_ywc_bottom {{color2[cu]}}"></div>
+                                            <div class="icR_xia_b_nr_ywc_nei">
+                                                <span class="nei_Ldian {{color2[cu]}}" ng-click></span>
+                                                <input type="text" class="no_finish" no-model="value" />
+                                                <div class="nei_Rxianqing">
+                                                    <span>详细信息</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icR_xia_bottom_neirong_xin" ng-xinzeng>
+                                        <!--新增-->
+                                        <div class="icR_xia_bottom_xian_top"></div>
+                                        <div class="wancheng_L">
+                                            新项目……
+                                        </div>
+                                        <div class="icR_xia_bottom_xian1"></div>
+                                    </div>
+                                </div>
+	                        </div>
+	                    </div>
+	                    
+	                </div>
+	            </div>
+	            <div class="selectorShow">
+	                <strong></strong>
+                    <input ng-keyup='save2local()' ng-model="lists[cu].name" type="text" class="selectorText {{lists[cu].theme}}" />
+                    <span class="span_color">列表颜色</span>
+                    <ul my-color>
+                        <li class="li" ng-repeat="v in color track by $index">
+                            <em id="{{v}}" ng-click="lists[cu].theme = v;save2local()"></em>
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <span id="del" ng-click="del()">删除</span>
+                        <span id="back" ng-click="back()">取消</span>
+                        <span id="over" ng-click="over()">完成</span>
+                    </div>
+                </div>
+	        </div>
+	        <div class="tan">
+                <div class="jingao"></div>
+                <div class="tan-text">
+                    <h3>是否清楚所有已完成提醒</h3>
+                    <p>所有已完成的提醒事项将永久删除。您不能撤销此操作。</p>
+                </div>
+                <span ng-click="tanQuxiao()">取消</span>
+                <strong class="ok" ng-click="tanShanchu();save2local()">清除已完成事项</strong>
+            </div>
+	    </div>
+	</body>
+	<script>
+	    var box=$(".box");
+        var icleft=$(".icloud_left");
+        var icright=$(".icloud_right");
+        var width=$(document).width();
+        var height=$(document).height();
+        box.css({"width":width,"height":height});
+	</script>
+</html>
